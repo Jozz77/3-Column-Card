@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+.flex-container{
+    display: flex;
+    width: 800px;
+    height: 450px;
+    justify-content: center;
+    align-content: center;
+    margin-left: 300px;
+    margin-top: 100px;
+    border: 50px;
+    border-radius: 20px;
+}
+.flex-container h1{
+    color: hsl(0, 0%, 95%);
+    padding-top: 30px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+.flex-container p{
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-top: 30px;
+    padding-bottom: 70px;
+    font-size: 1em;
+    line-height: 25px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.together{
+    width: 33.333333333;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+.flex-container button{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 25px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+}
+/*Sedans design*/
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+}
+.sedans button{
+    color: hsl(31, 77%, 52%);
+    
+}
+
+/*SUVS design*/
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+.suvs button{
+    color: hsl(184, 100%, 22%);
+}
+/*LUXURY design*/
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+
+                                   /*Mobile-375 design*/
+@media only screen and (max-width: 600px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Lexend Deca', sans-serif;
+        
+    }
+    body{
+        background-color: hsl(0, 0%, 95%);
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 1300px;
+        justify-content: center;
+        align-content: center;
+        margin-left: 35px;
+        margin-right: 0px;
+        margin-top: 50px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .flex-container h1{
+        color: hsl(0, 0%, 95%);
+        padding-top: 30px;
+        font-size: 2.5em;
+        font-family: 'Big Shoulders Display', cursive;
+    }
+    .flex-container p{
+        color: hsla(0, 0%, 100%, 0.75);
+        padding-top: 30px;
+        padding-bottom: 70px;
+        font-size: small;
+        line-height: 25px;
+    }
+    .together{
+        height: 100%;
+        padding-left: 20px;
+        padding-top: 25px;
+        padding-right: 35px;
+    }
+    .flex-container button{
+        background-color: hsl(0, 0%, 95%);
+        border-radius: 25px;
+        border: none;
+        padding: 10px 20px;
+        font-size: small;
+    }
+    /*Sedans design*/
+    .sedans{
+        background-color: hsl(31, 77%, 52%);
+    }
+    .sedans button{
+        color: hsl(31, 77%, 52%);
+        
+    }
+    
+    /*SUVS design*/
+    .suvs{
+        background-color: hsl(184, 100%, 22%);
+    }
+    .suvs button{
+        color: hsl(184, 100%, 22%);
+    }
+    /*LUXURY design*/
+    .luxury{
+        background-color: hsl(179, 100%, 13%);
+    }
+    .luxury button{
+        color: hsl(179, 100%, 13%);
+    }
+    
+}

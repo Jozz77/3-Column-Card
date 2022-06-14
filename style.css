@@ -10,6 +10,28 @@
 body{
     background-color: hsl(0, 0%, 95%);
 }
+header{
+  
+    text-align: center;
+    
+}
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    align-content: center;
+    justify-content: center;
+    margin-left: 0px; 
+    background-color: rgb(118, 118, 207); 
+    width: 100%; 
+    
+}
+a{
+    padding: 5px 30px;
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+}
 .flex-container{
     display: flex;
     width: 800px;
@@ -72,6 +94,56 @@ body{
 .luxury button{
     color: hsl(179, 100%, 13%);
 }
+                                        /*Grid Page*/
+.grid-body{
+    background-color: black;
+    display: flex;
+    height: 95vh;
+}
+.grid-main{
+    display: grid;
+    grid-template-areas: 
+    'a a a b b'
+    'a a a b b'
+    'a a a b b'
+    'a a a b b'
+    'c c d d d'
+    'c c d d d'
+    'c c e e e'
+    'c c e e e'
+    'c c e e e'
+    ;
+    width: 70%;
+    gap: 15px;
+    margin-top: 70px;
+    margin-left: 100px;
+    
+}
+.grid-main div{
+    padding: em;
+
+}
+.a-div{
+    background-color: rgba(201, 53, 8, 0.877);
+    grid-area: a;
+}
+.b-div{
+    background-color: rgb(255, 145, 0);
+    grid-area: b;
+}
+.c-div{
+    background-color: rgb(11, 168, 11);
+    grid-area: c;
+    padding-right: 40px;
+}
+.d-div{
+    background-color: rgb(1, 191, 216);
+    grid-area: d;
+}
+.e-div{
+    background-color: rgb(1, 191, 216);
+    grid-area: e;
+}
 
                                    /*Mobile-375 design*/
 @media only screen and (max-width: 600px){
@@ -85,6 +157,28 @@ body{
     body{
         background-color: hsl(0, 0%, 95%);
     }
+    header{
+  
+        text-align: center;
+        
+    }
+    nav{
+        display: flex;
+        position: fixed;
+        top: 0;
+        align-content: center;
+        justify-content: center;
+        margin-left: 0px; 
+        background-color: rgb(118, 118, 207); 
+        width: 100%; 
+        
+    }
+    a{
+        padding: 5px 30px;
+        color: white;
+        font-size: medium;
+        text-decoration: none;
+    }
     .flex-container{
         display: flex;
         flex-direction: column;
@@ -94,8 +188,8 @@ body{
         align-content: center;
         margin-left: 35px;
         margin-right: 0px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 70px;
+        margin-bottom: 80px;
         box-sizing: border-box;
         border-radius: 10px;
         overflow: hidden;
@@ -149,5 +243,60 @@ body{
     .luxury button{
         color: hsl(179, 100%, 13%);
     }
+
+                                /*Grid Page mobile 375*/
+    .grid-body{
+        background-color: black;
+        display: flex;
+        height: 60vh;
+    }
+    .grid-main{
+        display: grid;
+        grid-template-areas: 
+        'a a a b b'
+        'a a a b b'
+        'a a a b b'
+        'a a a b b'
+        'c c d d d'
+        'c c d d d'
+        'c c e e e'
+        'c c e e e'
+        'c c e e e'
+    ;
+        width: 80%;
+        gap: 5px;
+        margin-top: 220px;
+        margin-left: 35px;
+        
+    }
+    .grid-main div{
+        padding: em;
+    
+    }
+    .a-div{
+        background-color: rgba(201, 53, 8, 0.877);
+        grid-area: a;
+    }
+    .b-div{
+        background-color: rgb(255, 145, 0);
+        grid-area: b;
+    }
+    .c-div{
+        background-color: rgb(11, 168, 11);
+        grid-area: c;
+        padding-right: 40px;
+    }
+    .d-div{
+        background-color: rgb(1, 191, 216);
+        grid-area: d;
+    }
+    .e-div{
+        background-color: rgb(1, 191, 216);
+        grid-area: e;
+    }
     
 }
+
+                              
+
+    
